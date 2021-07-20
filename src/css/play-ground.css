@@ -1,0 +1,77 @@
+.App-button{
+    background-color: coral;
+    color: white;
+    border: 1px solid transparent;
+    height: 40px;
+    width: 100px;
+    margin: 20px;
+    position: absolute;
+}
+
+.x-button{
+  z-index: 100 !important;
+  margin-left: -100px;
+}
+
+.y-button{
+  z-index: 100 !important;
+}
+
+.App-button:hover{
+    background-color: white;
+    color: coral;
+    border: 1px solid coral;
+    transform: scale(1.1);
+    transition: 500ms ease-in-out;
+}
+
+  .motion-sensor{
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: -webkit-linear-gradient(bottom right,red,orange,yellow,green);
+    z-index: 1;
+    overflow: hidden;
+  }
+
+@keyframes action {
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(90deg);
+  }
+  20%{
+    transform: translateY(-100px);
+  }
+  30%{
+    transform: rotate(-90deg);
+  }
+  40%{
+    transform: translateX(-300px);
+  }
+  50%{
+    transform: rotate(90deg);
+  }
+  60%{
+    transform: translateX(-500px);
+  }
+  70%{
+    transform:rotateY(180deg)
+  }
+  80%{
+    transform: translateY(500px);
+  }
+  90%{
+    transform: translateX(500px);
+  }
+  100%{
+   
+  }
+}
+
+.super-hero{
+  animation: action 12500ms infinite;
+}
