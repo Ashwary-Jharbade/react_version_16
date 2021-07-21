@@ -1,0 +1,38 @@
+.box-container{
+    display: inline-flex;
+}
+
+.box{
+    margin: 15px;
+    width: 200px;
+    height: 280px;
+    background-color: white;
+    border-radius: 0 5px 0 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.img-container{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+}
+
+.text-content{
+    height: 80px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.text-content p{
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 22px;
+    font-family: 'Poiret One', cursive;
+}

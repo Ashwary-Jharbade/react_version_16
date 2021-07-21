@@ -1,5 +1,5 @@
 import React from 'react'
-
+import SplashScreen from './components/SplashScreen';
 class ErrorBoundary extends React.Component{
 
     state = { hasError: false };
@@ -17,7 +17,7 @@ class ErrorBoundary extends React.Component{
  
     render(){
         if (this.state.hasError) {
-            return <h1>Something went wrong.</h1>;
+            return <SplashScreen text="An Error Occured"></SplashScreen>;
         }
       
         return this.props.children;

@@ -3,7 +3,7 @@
 const self = this;
 const version = 1;
 const cacheName = 'cache-' + version;
-const offlinePageUrl = ['offline.html'];
+const offlinePageUrl = ['offline.html',];
 const urlsToCache = [
   'index.html',
   offlinePageUrl

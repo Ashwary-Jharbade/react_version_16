@@ -1,0 +1,20 @@
+body{
+    background-color: #ffebeb;
+    font-family: 'Poiret One', cursive;
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
+}
+
+body::-webkit-scrollbar-corner{
+    background-color: #ffebeb;
+}
+      
+body::-webkit-scrollbar-track {
+    background-color: #ffebeb;
+}
+      
+body::-webkit-scrollbar-thumb {
+    background-color:#ffebeb;
+}
