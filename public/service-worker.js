@@ -1,11 +1,12 @@
 // Tip: By changing the cache-version we can invalidate the old cache
 // and let the browser load the new one.
 const self = this;
-const version = 1;
+const version = 3;
 const cacheName = 'cache-' + version;
 const offlinePageUrl = ['offline.html',];
 const urlsToCache = [
   'index.html',
+  'react.png',
   offlinePageUrl
 ];
 

@@ -8,12 +8,13 @@ class BlogContainer extends React.Component{
             arr : props.data
         }
     }
+
     render(){
         return(
             <>
                 <div className="box-container">
                     { this.state.arr.map( (obj,i)=>{
-                        return <BlogCard key={i} topic={obj.topic}></BlogCard>
+                        return <BlogCard key={i} id={obj.id} topic={obj.topic}></BlogCard>
                     } ) }
                 </div>
             </>

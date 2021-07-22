@@ -8,11 +8,12 @@ class SplashScreen extends React.Component{
             text:this.props.text
         }
     }
+
     render(){
         return(
             <>
             <section id="splash-screen">
-                <div className="splash-screen">
+                <div className="splash-screen"> 
                     <div className="splash-screen-brand" align="center">
                         <div>
                             <span> {this.state.text} </span>

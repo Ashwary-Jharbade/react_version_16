@@ -1,5 +1,6 @@
 .box-container{
     display: inline-flex;
+    padding: 10px;
 }
 
 .box{
@@ -35,4 +36,8 @@
     font-weight: bolder;
     line-height: 22px;
     font-family: 'Poiret One', cursive;
+}
+
+.link-react{
+    text-decoration: none !important;
 }
