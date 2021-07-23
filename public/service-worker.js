@@ -2,7 +2,8 @@
 // and let the browser load the new one.
 const self = this;
 const version = 3;
-const cacheName = 'cache-' + version;
+const cacheName = 'cache-' + version;clear
+
 const offlinePageUrl = ['offline.html',];
 const urlsToCache = [
   'index.html',

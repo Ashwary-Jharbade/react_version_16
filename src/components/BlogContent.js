@@ -4,21 +4,8 @@ import '../css/blog-content.css'
 import { Data } from "../Server/DataCenter"
 
 class BlogContent extends React.Component{
-    constructor(props){
-        super(props)
 
-        let blog = {}
-        for(let i=0;i<Data.data.length;i++){
-            if(parseInt(this.props.match.params.id) === Data.data[i].id){
-                blog = Data.data[i]
-            }
-        }
-
-        this.state ={
-            obj:blog
-        }
-    }
-    goBack = () =>{
+    goBack = () => {
         this.props.history.push("/");
     }
 
@@ -33,8 +20,16 @@ class BlogContent extends React.Component{
                 <section>
                     <div className="blog-content-container" align="center">
                         <div className="container" align="left">
-                            <h1>{this.state.obj.topic}</h1>
-                            <p>{ this.state.obj.content }</p>
+                            {
+                                Data.data.filter(obj => obj.id === parseInt(this.props.match.params.id)).map(obj =>{
+                                    return(
+                                        <>
+                                            <h1>{obj.topic}</h1>
+                                            <p>{obj.content }</p>
+                                        </>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </section>
